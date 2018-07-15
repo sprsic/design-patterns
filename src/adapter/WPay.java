@@ -6,7 +6,7 @@ public interface WPay {
 
     String getCustomerName();
 
-    String getCardExpMonth();
+    int getCardExpMonth();
 
     Double getAmount();
 

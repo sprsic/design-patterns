@@ -3,8 +3,8 @@ package adapter;
 public class WpayImpl implements WPay {
     private String creditCardNo;
     private String customerName;
-    private String cardExpMonth;
-    private String cardExpYear;
+    private int cardExpMonth;
+    private int cardExpYear;
     private Double amount;
 
     @Override
@@ -18,7 +18,7 @@ public class WpayImpl implements WPay {
     }
 
     @Override
-    public String getCardExpMonth() {
+    public int getCardExpMonth() {
         return this.cardExpMonth;
     }
 

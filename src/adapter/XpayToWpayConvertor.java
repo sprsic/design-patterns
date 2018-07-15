@@ -19,7 +19,7 @@ public class XpayToWpayConvertor implements WPay {
     }
 
     @Override
-    public String getCardExpMonth() {
+    public int getCardExpMonth() {
         return this.xpay.getCardExpMonth();
     }
 
