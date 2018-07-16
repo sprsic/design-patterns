@@ -1,13 +1,13 @@
-package fasade;
+package facade;
 
 /**
- * Main fasade class that simplifies starting and stopping ServerScheduler
+ * Main facade class that simplifies starting and stopping ServerScheduler
  */
-public class SchedulerServerFasade {
+public class SchedulerServerFacade {
 
     private ServerTasks scheduler;
 
-    public SchedulerServerFasade(ServerTasks scheduler) {
+    public SchedulerServerFacade(ServerTasks scheduler) {
         this.scheduler = scheduler;
     }
 

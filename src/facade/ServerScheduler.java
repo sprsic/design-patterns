@@ -1,4 +1,4 @@
-package fasade;
+package facade;
 
 public class ServerScheduler implements ServerTasks {
     @Override
