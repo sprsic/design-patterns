@@ -1,3 +1,7 @@
+import abstractFactory.GuiBuilder;
+import abstractFactory.MacWindowFactory;
+import abstractFactory.MsWindowFactory;
+import abstractFactory.Window;
 import composite.HtmlElement;
 import composite.HtmlParentElement;
 import composite.HtmlTag;
@@ -14,9 +18,13 @@ public class Main {
      *
      * */
 
-    public static void main(String[] args) {
-        facadeTest();
-        compositePattern();
+    public static void main(String[] args) throws Throwable {
+//        facadeTest();
+//        compositePattern();
+
+        Window window1 = GuiBuilder.buildWindow(new MsWindowFactory());
+        Window window2 = GuiBuilder.buildWindow(new MacWindowFactory());
+
     }
 
     private static void compositePattern() {
